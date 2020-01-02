@@ -1,0 +1,27 @@
+{
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/*.config.js": true,
+    "**/*config.json": true,
+    "**/.*rc": true,
+    "**/.*ignore": true,
+    "**/dist": true,
+    ".editorconfig": true,
+    ".env*": true,
+    ".prettier*": true,
+    ".vscode/": true,
+    ".yarn-offline/": true,
+    ".yarnrc.example": true,
+    "commitlint.config.js": true,
+    "coverage/": true,
+    "degit.json": true,
+    "lerna.json": true,
+    "LICENSE": true,
+    "yarn.lock": true
+  },
+  "npm.packageManager": "yarn",
+  "[markdown]": {
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 80
+  }
+}
