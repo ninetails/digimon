@@ -1,0 +1,23 @@
+{
+  "name": "@digimon/eslint-config-node",
+  "version": "0.0.0",
+  "description": "@todo",
+  "license": "MIT",
+  "repository": "github:ninetails/digimon",
+  "homepage": "https://github.com/ninetails/digimon/tree/master/packages/digimon-eslint-config-node#readme",
+  "bugs": {
+    "url": "https://github.com/ninetails/digimon/issues"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.14.0",
+    "@typescript-eslint/parser": "^2.14.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-config-standard-with-typescript": "^11.0.1",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1"
+  }
+}

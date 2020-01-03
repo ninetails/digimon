@@ -1,0 +1,7 @@
+#!/usr/bin/env node
+'use strict'
+
+const { default: cli } = require('@digimon/cli/dist/index')
+const argv = cli.parse(process.argv.slice(2))
+
+console.log(argv)

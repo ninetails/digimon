@@ -1,0 +1,6 @@
+{
+  "extends": "@digimon/node",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  }
+}

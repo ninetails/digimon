@@ -1,0 +1,31 @@
+{
+  "name": "@digimon/tooling-helpers",
+  "version": "0.0.0",
+  "description": "@todo",
+  "license": "MIT",
+  "repository": "github:ninetails/digimon",
+  "homepage": "https://github.com/ninetails/digimon/tree/master/packages/digimon-helpers#readme",
+  "bugs": {
+    "url": "https://github.com/ninetails/digimon/issues"
+  },
+  "main": "lib/index.js",
+  "devDependencies": {
+    "eslint-config-prettier": "^6.9.0",
+    "prettier": "^1.19.1"
+  },
+  "scripts": {
+    "build": "concurrently yarn:build:*",
+    "build:babel": "babel -x .ts -d lib --ignore **/*.test.ts src",
+    "build:declarations": "tsc --declaration --outDir lib --emitDeclarationOnly --declarationMap",
+    "clean": "rimraf coverage lib || :",
+    "format": "$npm_execpath run lint -- --fix",
+    "lint": "eslint --ext .ts,.js src",
+    "postinstall": "$npm_execpath run build",
+    "test": "jest",
+    "test:watch": "$npm_execpath run test -- --watch",
+    "type-check": "tsc --noEmit",
+    "watch": "concurrently yarn:watch:* -- --watch",
+    "watch:babel": "$npm_execpath run build:babel -- -w",
+    "watch:declarations": "$npm_execpath run build:declarations -- -w"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "name": "@digimon/resolver-github",
+  "version": "0.0.0",
+  "description": "@todo",
+  "license": "MIT",
+  "repository": "github:ninetails/digimon",
+  "homepage": "https://github.com/ninetails/digimon/tree/master/packages/digimon-resolver-github#readme",
+  "bugs": {
+    "url": "https://github.com/ninetails/digimon/issues"
+  },
+  "main": "lib/index.js",
+  "type": "lib/index.d.ts",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib"
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.7.7",
+    "@babel/core": "^7.7.7",
+    "@digimon/babel-preset-node": "^0.0.0",
+    "@digimon/eslint-config-node": "^0.0.0",
+    "@types/jest": "^24.0.25",
+    "concurrently": "^5.0.2",
+    "eslint": "^6.8.0",
+    "jest": "^24.9.0",
+    "rimraf": "^3.0.0",
+    "typescript": "^3.7.4"
+  },
+  "scripts": {
+    "build": "concurrently yarn:build:*",
+    "build:babel": "babel -x .ts -d lib --ignore **/*.test.ts src",
+    "build:declarations": "tsc --declaration --outDir lib --emitDeclarationOnly --declarationMap",
+    "clean": "rimraf coverage lib || :",
+    "format": "$npm_execpath run lint -- --fix",
+    "lint": "eslint --ext .ts,.js src",
+    "postinstall": "$npm_execpath run build",
+    "test": "jest --passWithNoTests",
+    "test:watch": "$npm_execpath run test -- --watch",
+    "type-check": "tsc --noEmit",
+    "watch": "concurrently yarn:watch:* -- --watch",
+    "watch:babel": "$npm_execpath run build:babel -- -w",
+    "watch:declarations": "$npm_execpath run build:declarations -- -w"
+  }
+}

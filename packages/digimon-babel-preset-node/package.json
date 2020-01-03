@@ -1,0 +1,20 @@
+{
+  "name": "@digimon/babel-preset-node",
+  "version": "0.0.0",
+  "description": "@todo",
+  "license": "MIT",
+  "repository": "github:ninetails/digimon",
+  "homepage": "https://github.com/ninetails/digimon/tree/master/packages/digimon-babel-preset-node#readme",
+  "bugs": {
+    "url": "https://github.com/ninetails/digimon/issues"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/plugin-proposal-numeric-separator": "^7.7.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/preset-typescript": "^7.7.7"
+  }
+}

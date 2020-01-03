@@ -1,0 +1,5 @@
+#!/usr/bin/env node
+'use strict'
+
+const { default: cli } = require('../lib/index')
+cli.parse(process.argv.slice(2))

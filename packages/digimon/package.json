@@ -1,0 +1,22 @@
+{
+  "name": "digimon",
+  "version": "0.0.0",
+  "description": "@todo",
+  "license": "MIT",
+  "repository": "github:ninetails/digimon",
+  "homepage": "https://github.com/ninetails/digimon#readme",
+  "bugs": {
+    "url": "https://github.com/ninetails/digimon/issues"
+  },
+  "bin": "bin/cli",
+  "directories": {
+    "lib": "dist"
+  },
+  "files": [
+    "bin",
+    "dist"
+  ],
+  "dependencies": {
+    "@digimon/cli": "^0.0.0"
+  }
+}

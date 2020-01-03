@@ -1,27 +1,37 @@
 {
   "files.exclude": {
-    "**/node_modules": true,
-    "**/*.config.js": true,
-    "**/*config.json": true,
-    "**/.*rc": true,
-    "**/.*ignore": true,
-    "**/dist": true,
-    ".editorconfig": true,
-    ".env*": true,
-    ".prettier*": true,
-    ".vscode/": true,
-    ".yarn-offline/": true,
-    ".yarnrc.example": true,
-    "commitlint.config.js": true,
-    "coverage/": true,
-    "degit.json": true,
-    "lerna.json": true,
-    "LICENSE": true,
-    "yarn.lock": true
+    "**/node_modules": false,
+    "**/*.config.js": false,
+    "**/*config.json": false,
+    "**/.*rc": false,
+    "**/.*ignore": false,
+    "**/dist": false,
+    "packages/*/lib": false,
+    ".editorconfig": false,
+    ".env*": false,
+    ".prettier*": false,
+    ".vscode/": false,
+    ".yarn-offline/": false,
+    ".yarnrc.example": false,
+    "commitlint.config.js": false,
+    "coverage/": false,
+    "degit.json": false,
+    "lerna.json": false,
+    "LICENSE": false,
+    "yarn.lock": false
   },
+
   "npm.packageManager": "yarn",
+
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+
   "[markdown]": {
     "editor.wordWrap": "wordWrapColumn",
     "editor.wordWrapColumn": 80
-  }
+  },
+  "cSpell.words": [
+    "digimon"
+  ]
 }
